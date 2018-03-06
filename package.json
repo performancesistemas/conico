@@ -6,13 +6,14 @@
   },
   "displayName": "conico",
   "dependencies": {
+    "cordova-android": "^6.3.0",
     "cordova-ios": "^4.5.4",
-    "phonegap-plugin-barcodescanner": "^7.0.2",
-    "cordova-plugin-statusbar": "~2.1.3",
-    "phonegap-plugin-push": "~1.8.0",
     "cordova-plugin-console": "~1.0.3",
     "cordova-plugin-dialogs": "~1.2.1",
-    "cordova-plugin-whitelist": "~1.2.1"
+    "cordova-plugin-statusbar": "~2.1.3",
+    "cordova-plugin-whitelist": "~1.2.1",
+    "phonegap-plugin-barcodescanner": "^7.0.2",
+    "phonegap-plugin-push": "~1.8.0"
   },
   "cordova": {
     "plugins": {
@@ -26,7 +27,8 @@
       "phonegap-plugin-barcodescanner": {}
     },
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ]
   }
 }
