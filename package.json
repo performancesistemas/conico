@@ -7,6 +7,7 @@
   "displayName": "conico",
   "dependencies": {
     "cordova-android": "^6.3.0",
+    "cordova-browser": "^5.0.3",
     "cordova-ios": "^4.5.4",
     "cordova-plugin-console": "~1.0.3",
     "cordova-plugin-dialogs": "~1.2.1",
@@ -28,6 +29,7 @@
     },
     "platforms": [
       "ios",
+      "browser",
       "android"
     ]
   }

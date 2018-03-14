@@ -1,28 +1,31 @@
 {
-    "prepare_queue": {
-        "installed": [],
-        "uninstalled": []
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.ps.conico"
     },
-    "config_munge": {
-        "files": {}
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.ps.conico"
     },
-    "installed_plugins": {
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.ps.conico"
-        },
-        "phonegap-plugin-push": {
-            "SENDER_ID": "XXXXXXX",
-            "PACKAGE_NAME": "com.ps.conico"
-        },
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "com.ps.conico"
-        },
-        "cordova-plugin-dialogs": {
-            "PACKAGE_NAME": "com.ps.conico"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ps.conico"
-        }
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.ps.conico"
     },
-    "dependent_plugins": {}
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.ps.conico"
+    },
+    "phonegap-plugin-barcodescanner": {
+      "PACKAGE_NAME": "com.ps.conico"
+    },
+    "phonegap-plugin-push": {
+      "SENDER_ID": "XXXXXXX",
+      "PACKAGE_NAME": "com.ps.conico"
+    }
+  },
+  "dependent_plugins": {}
 }

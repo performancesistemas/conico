@@ -21,40 +21,35 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
 
-    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+
     <link rel="stylesheet" href="css/index.css" />
     <title>Conico App</title>
 </head>
 
 <body>
 
-    <div data-role="page">
-
-        <div data-role="panel" id="mypanel">
-            <!-- panel content goes here -->
-        </div>
-        <!-- /panel -->
-
-
-
-        <div data-role="header" id="header">
-            <h1>Conico</h1>
-        </div>
-        <div data-role="main" class="ui-content">
-            <div id="registration" class="blink">
-                <p class="event waiting">Requesting Registration ID</p>
-                <p class="event received">Registered</p>
-            </div>
-            <button onClick="barcodescanner()">Click Me</button>
-        </div>
-        <div data-role="footer" id="footer">
-                <p class="copyright-text">©Copyright 2016 | Cónico Ice Cream Shop l  Todos los derechos reservados | Powered by <a href="http://poliedricom.es" target="_blank">Poliédricom</a> <a href="http://www.conico.es/aviso-legal/" target="_blank">| Aviso legal</a></p>
-        </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
     </div>
 
+    <div id="main">
+        <h2>Sidenav Push Example</h2>
+        <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    </div>
+
+
     <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="popper/popper.min.js"></script>
+    <script type="text/javascript" src="tooltip/tooltip.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
 
     <script type="text/javascript">
