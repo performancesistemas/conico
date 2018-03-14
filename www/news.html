@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"
+  />
+  <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *"
+  />
+
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="css/index.css" />
+  <title>Conico App</title>
+</head>
+
+<body>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="#">Nuestros Helados</a>
+    <a href="#">Más que Helados</a>
+    <a href="stores.html">Tiendas</a>
+    <a href="news.html" class="selected">Novedades</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div id="main" class="container">
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Novedades</span>
+      </a>
+    </nav>
+
+    <div class="row">
+      <div class="col">
+       
+          <img class="card-img-top" src="img/qrcode.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Redimir Voucher</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Usando un código QR</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="input-group">
+              <input id="scanner_input" class="form-control" placeholder="Click the button to scan a code" type="text">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button" onClick="barcodescanner()">
+                  <i class="fa fa-barcode"></i>
+                </button>
+              </span>
+            </div>
+            <!-- /input-group -->
+          </div>
+        </div>
+      </div>
+      <!-- /.col-lg-6 -->
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+
+      <span class="text-muted">
+        <div class="icon-bar">
+          <a href="#" class="facebook">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="#" class="twitter">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="#" class="google">
+            <i class="fa fa-google"></i>
+          </a>
+          <a href="#" class="linkedin">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a href="#" class="youtube">
+            <i class="fa fa-youtube"></i>
+          </a>
+        </div>
+      </span>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="popper/popper.min.js"></script>
+  <script type="text/javascript" src="tooltip/tooltip.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+
+  <script type="text/javascript">
+    app.initialize();
+  </script>
+</body>
+
+</html>
