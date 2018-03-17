@@ -1,12 +1,18 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "Conico App",
-  "short_name": "Conico App",
+  "name": "Conico",
+  "short_name": "Conico",
   "version": "com.ps.conico",
   "description": "Conico ICE CREAM SHOP",
-  "author": "PhoneGap Team",
-  "icons": [],
+  "author": "Performance Sistemas S.R.L.",
+  "icons": [
+    {
+      "src": "www/img/logo.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ],
   "start_url": "index.html",
   "theme_color": "#ee6e73"
 }

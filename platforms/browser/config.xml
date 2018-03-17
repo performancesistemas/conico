@@ -1,13 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.ps.conico" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Conico App</name>
+    <name>Conico</name>
     <description>
         Conico ICE CREAM SHOP
     </description>
     <author email="diego.correa@performancesistemas.com.ar" href="http://performancesistemas.com.ar">
-        PhoneGap Team
+        Performance Sistemas S.R.L.
     </author>
     <content src="index.html" />
+    <icon src="www/img/logo.png" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
