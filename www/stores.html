@@ -17,14 +17,14 @@
         * Enable inline JS: add 'unsafe-inline' to default-src
         * Enable eval(): add 'unsafe-eval' to default-src
     * Create your own at http://cspisawesome.com
-    -->
+    
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *"
-    />
+    />-->
 
 
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
-
+    <link rel="stylesheet" href="flag-icon/flag-icon.min.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Conico App</title>
 </head>
@@ -63,7 +63,6 @@
                         <a href="contact.html">Contact</a>
                     </li>
                 </ul>
-            
                 <div class="icon-bar">
                     <a href="#" class="facebook">
                         <i class="fa fa-facebook"></i>
@@ -100,11 +99,12 @@
                     <a href="#">
                         <span class="flag-icon flag-icon-it"></span>
                     </a>
-                </div>
-            
-            </div>
+                </div>            
+        </div>
 
-    <div id="main" class="container">
+    
+    
+            <div id="main" class="container">
             <nav class="navbar navbar-dark bg-dark">
                     <a class="navbar-brand" href="#">
                         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <img src="img/logo-blanco.png" alt="Cónico" /></span>
@@ -112,29 +112,7 @@
                 </nav>
     </div>
 
-    <footer class="footer">
-        <div class="container">
-            <span class="text-muted">
-                <div class="icon-bar">
-                    <a href="#" class="facebook">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a href="#" class="twitter">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="#" class="google">
-                        <i class="fa fa-google"></i>
-                    </a>
-                    <a href="#" class="linkedin">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                    <a href="#" class="youtube">
-                        <i class="fa fa-youtube"></i>
-                    </a>
-                </div>
-            </span>
-        </div>
-    </footer>
+
 
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
