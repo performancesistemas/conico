@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "lily-font";
+    src: url("../font/LilyScriptOne-Regular.ttf"); 
+}
+
+.class-lily-font { 
+    font-family: lily-font;
+}
 
 html {
     position: relative;
@@ -13,44 +21,56 @@ body {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    display: block !important;
 }
 
-.sidenav a {
+.components a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 16px;
     color: #818181;
     display: block;
     transition: 0.3s;
 }
 
-.sidenav a:hover {
+.components a:hover {
     color: #f1f1f1;
 }
 
 .sidenav .closebtn {
     position: absolute;
-    top: 0;
+    top: 5px;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .logo {
+    position: absolute;
+    top: 0;
+    margin-top: 20px;
+    margin-left: 25px;
+    text-align: center;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
 }
 
 #main {
     transition: margin-left .5s;
-    padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+    padding: 0px;
 }
 
 .footer {
@@ -63,5 +83,92 @@ body {
   }
 
 
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
 
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
 
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid  #818181;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style: none;
+    border-bottom: 1px solid   #818181;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+.icon-bar {
+    padding-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+.icon-bar .fa {
+    width: 22px;
+    height: 22px;
+    margin: 14px 8px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: inline-block;
+    line-height: 22px;
+    text-decoration: none;
+    color: #818181;
+    transition: 0.3s;
+}
+
+.language-bar {
+    padding-top: 40px;
+    display: block;
+    text-align: center;
+}
+
+.language-bar .flag-icon {
+    width: 22px;
+    height: 22px;
+    margin: 14px 8px;
+    font-size: 20px;
+    display: inline-block;
+    line-height: 22px;
+    text-decoration: none;
+    color: #818181;
+    transition: 0.3s;
+}
+
+.franchisee {
+    padding-top: 20px;
+}
+
+.franchisee p {
+    padding: 8px 8px 8px 8px;
+    text-align: center;
+    color: #818181;
+    transition: 0.3s;
+    border: 1px solid #818181;
+}
+
+.alergenos {
+    text-align: center;
+}
+
+.alergenos img {
+    padding: 8px 8px 8px 8px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#carouselExampleIndicators{
+    background-color: beige;
+}

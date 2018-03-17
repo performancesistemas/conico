@@ -31,22 +31,87 @@
 
 <body>
 
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.html">Home</a>
-    <a href="#">Nuestros Helados</a>
-    <a href="#">Más que Helados</a>
-    <a href="stores.html">Tiendas</a>
-    <a href="news.html" class="selected">Novedades</a>
-    <a href="contact.html">Contact</a>
-  </div>
+    <div id="mySidenav" class="sidenav" id="sidebar">
+        <div class="sidebar-header">
+            <img src="img/logo-blanco.png" alt="Cónico" class="logo">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
+        <ul class="list-unstyled components">
+            <div class="alergenos">
+                <img src="img/vegan.png" width="40px" />
+                <img src="img/lactose-free.png" width="40px" />
+                <img src="img/gluten-free.png" width="40px" />
+                <img src="img/sugar-free.png" width="40px" />
+                <img src="img/egg-free.png" width="40px" />
+            </div>
+            <li>
+                <a href="index.html" class="active">Home</a>
+            </li>
+            <li>
+                <a href="flavors.html">Nuestros Helados</a>
+            </li>
+            <li>
+                <a href="#">Más que Helados</a>
+            </li>
+            <li>
+                <a href="stores.html">Tiendas</a>
+            </li>
+            <li>
+                <a href="news.html">Novedades</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    
+        <div class="icon-bar">
+            <a href="#" class="facebook">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#" class="twitter">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="#" class="google">
+                <i class="fa fa-google"></i>
+            </a>
+            <a href="#" class="linkedin">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="#" class="youtube">
+                <i class="fa fa-youtube"></i>
+            </a>
+        </div>
+        <div class="franchisee">
+            <p>Want to be a franchisee?</p>
+        </div>
+        <div class="language-bar">
+            <a href="#">
+                <span class="flag-icon flag-icon-es"></span>
+            </a>
+            <a href="#">
+                <span class="flag-icon flag-icon-us"></span>
+            </a>
+            <a href="#">
+                <span class="flag-icon flag-icon-fr"></span>
+            </a>
+            <a href="#">
+                <span class="flag-icon flag-icon-nl"></span>
+            </a>
+            <a href="#">
+                <span class="flag-icon flag-icon-it"></span>
+            </a>
+        </div>
+    
+    </div>
 
   <div id="main" class="container">
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Novedades</span>
-      </a>
-    </nav>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+                    <img src="img/logo-blanco.png" alt="Cónico" />
+                </span>
+            </a>
+        </nav>
 
     <div class="row">
       <div class="col">
